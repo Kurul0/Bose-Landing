@@ -1,0 +1,16 @@
+body {
+margin: 0;
+}
+
+header {
+aspect-ratio: 16/9;
+background-image: url(images/Headphones-image-1.png);
+background-size: cover;
+background-position: top center;
+}
+footer {
+height: 460px;
+background-size: cover;
+background-position: top center;
+background-image: url(images/Footer-photo-1.png);
+}
