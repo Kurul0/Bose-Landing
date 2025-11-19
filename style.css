@@ -16,7 +16,21 @@ h1 {
 }
 
 .menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  transform: translateX(-100%);
+  transition: transform 500ms;
+
   background-color: #E8EFF9;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 64px 120px;
+}
+
+.menu:target {
+  transform: translateX(0%);
 }
 
 nav {
@@ -37,9 +51,11 @@ nav {
   text-transform: uppercase;
 }
 
-.menu {
-  padding: 64px 120px;
+.nav-link:hover {
+text-decoration: underline;
+text-underline-offset: 8px;
 }
+
 
 .menu-top {
   margin-bottom: 64px;
@@ -81,6 +97,63 @@ header {
 
 .menu-button:hover {
   background-image: url(images/icon-burger-menu-hover.png);
+}
+
+.recommended-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #292929;
+  margin-bottom: 0;
+  margin-top: 120px;
+}
+
+.products {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 24px;
+margin-left: 120px;
+margin-right: 120px;
+margin-top: 64px;
+margin-bottom: 120px;
+}
+
+.product-photo {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.product-title {
+  margin-top: 32px;
+  margin-bottom: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #292929;
+  font-weight: 700;
+}
+
+.product-description {
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #292929;
+  font-weight: 400;
+}
+
+.product-price {
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #292929;
+  font-weight: 700;
 }
 
 footer {
